@@ -136,7 +136,7 @@ ssize_t iio_buffer_refill(struct iio_buffer *buffer)
 	const struct iio_device *dev = buffer->dev;
 
 	printf("printf: IML Debug -- iio_buffer_refill()\r\n");
-	printk("printk: IML Debug -- iio_buffer_refill()\r\n");
+	//printk("printk: IML Debug -- iio_buffer_refill()\r\n");
 
 	if (buffer->dev_is_high_speed) {
 		read = dev->ctx->ops->get_buffer(dev, &buffer->buffer,
