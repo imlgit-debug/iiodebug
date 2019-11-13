@@ -16,12 +16,13 @@
  *
  * */
 
-#include "iio-config.h"
-#include "iio-private.h"
 
 #include <errno.h>
 #include <string.h>
 #include <stdio.h>
+
+#include "iio-config.h"
+#include "iio-private.h"
 
 struct callback_wrapper_data {
 	ssize_t (*callback)(const struct iio_channel *, void *, size_t, void *);
